@@ -7,7 +7,7 @@ loading......
 | just geometric   | 0.39 | 0.35 | 0.37                         |
 | with masknet     | 0.57 | 0.52 | 0.55                         |
 | slot attention on scene flow| 0.48 | 0.10 | 0.29              |
-| TransMask | 0.4837 | 0.6320 | 0.5578              |
+| TransMask | 0.5130 | 0.6320 | 0.5725             |
 ## masknet is good
 ![image](https://user-images.githubusercontent.com/54012489/143808098-cfc0f440-0cd7-4c8b-b6f9-0f3faf5c7140.png)
 ## scene flow not good enough
