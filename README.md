@@ -10,8 +10,6 @@ loading......
 | TransMask | 0.5130 | 0.6320 | 0.5725             |
 ## masknet is good
 ![image](https://user-images.githubusercontent.com/54012489/143808098-cfc0f440-0cd7-4c8b-b6f9-0f3faf5c7140.png)
-## scene flow not good enough
-![slide2](https://user-images.githubusercontent.com/54012489/127940143-076d455e-329c-4113-83bc-0551cabb9cf8.png)
 
 ## a new way to upgrade the masknet
 ![Fig](https://user-images.githubusercontent.com/54012489/146138094-70be6586-e177-4ce6-8e90-7bcf62782d8a.png)
@@ -27,4 +25,5 @@ $ L_{reconimg} = MSE(reconstructedframet, framet) $
 ### 5. entropy loss for slot output mask
 $ L_{entropy} = \sum_{l=0}^{k}-(Mask_{slot}^{l} \cdot log(Mask_{slot}^{l}+eps)) $
 
+## Result
 All results could be download [here](https://drive.google.com/file/d/1YzR0FIVM1U3eEr2aiY3S-SYeIObKza2H/view?usp=sharing)
