@@ -26,3 +26,5 @@ $ L_{smoothness} = \sum_{l=0}^{3}(\bigtriangledown_{depth}^{2}+\bigtriangledown_
 $ L_{reconimg} = MSE(reconstructedframet, framet) $
 ### 5. entropy loss for slot output mask
 $ L_{entropy} = \sum_{l=0}^{k}-(Mask_{slot}^{l} \cdot log(Mask_{slot}^{l}+eps)) $
+
+All results could be download [here](https://drive.google.com/file/d/1YzR0FIVM1U3eEr2aiY3S-SYeIObKza2H/view?usp=sharing)
