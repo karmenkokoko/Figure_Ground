@@ -13,7 +13,7 @@
 ### Networks
 * PoseNet = PoseNetB6  from [CC](https://github.com/anuragranj/cc)
 * FlowNet = FlowNetCorr, PWCNet 
-* DispNet = DispResNet 
+* DispNet = DispResNet (MONOCULAR)
 * MaskNet = MaskNetCNN, **MaskResNet**, **MaskTransNet** 
 
 ### Datasets
