@@ -7,12 +7,6 @@
 | slot attention on scene flow| 0.48 | 0.10 | 0.29              |
 | TransMask | 0.5130 | 0.6320 | 0.5725             |
 
-## Result samples
-All results could be download [here](https://drive.google.com/file/d/1YzR0FIVM1U3eEr2aiY3S-SYeIObKza2H/view?usp=sharing)
-| IMG | DEPTH |
-| ----- | ----- |
-| ![00201](https://user-images.githubusercontent.com/54012489/152453327-d31c2396-1449-42b5-991e-67a3017384b9.png) | ![002_03](https://user-images.githubusercontent.com/54012489/152453397-525e6f97-40b5-4150-9039-5da59dcd0063.png) |
-| ![04601](https://user-images.githubusercontent.com/54012489/152453466-7c66a7d7-3d08-4294-82ed-bd9955edbbec.png) | ![046_03](https://user-images.githubusercontent.com/54012489/152453482-c79ba389-b123-4741-9984-f2463ff4b666.png) |
 ## MODEL
 ![image](https://user-images.githubusercontent.com/54012489/153791403-35cea64c-1f09-4f60-aeeb-219a96057e3b.png)
 
@@ -101,3 +95,11 @@ python3 train.py /media/karmen/HDD/EPC/format_data --kitti-dir /media/karmen/HDD
     --epochs 100 --smoothness-type edgeaware --fix-dispnet --fix-posenet --fix-masknet \
     --log-terminal --with-depth-gt --name initial100 --resume
  ```
+ 
+ 
+## Result samples
+All results could be download [here](https://drive.google.com/file/d/1YzR0FIVM1U3eEr2aiY3S-SYeIObKza2H/view?usp=sharing)
+| IMG | DEPTH |
+| ----- | ----- |
+| ![00201](https://user-images.githubusercontent.com/54012489/152453327-d31c2396-1449-42b5-991e-67a3017384b9.png) | ![002_03](https://user-images.githubusercontent.com/54012489/152453397-525e6f97-40b5-4150-9039-5da59dcd0063.png) |
+| ![04601](https://user-images.githubusercontent.com/54012489/152453466-7c66a7d7-3d08-4294-82ed-bd9955edbbec.png) | ![046_03](https://user-images.githubusercontent.com/54012489/152453482-c79ba389-b123-4741-9984-f2463ff4b666.png) |
