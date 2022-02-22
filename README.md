@@ -20,7 +20,7 @@ All results could be download [here](https://drive.google.com/file/d/1YzR0FIVM1U
 * MaskNet = MaskNetCNN, **MaskResNet**, **MaskTransNet** 
 
 ### Datasets
-* KITTI rawdata Eigen split. (65 scenes 35226 samples for train. 13 scenes 9304 samples for valid.)
+* KITTI rawdata **Eigen split**. (65 scenes 35226 samples for train. 13 scenes 9304 samples for valid.)
 * Eigen split 697 raw data samples for disparity test. 
 * KITTI scene flow 200 scenes for optical flow and mask test.
 * KITTI odometry pose ground truth 08.txt 09.txt for test (未完成)
