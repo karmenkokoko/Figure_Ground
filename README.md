@@ -14,6 +14,8 @@ All results could be download [here](https://drive.google.com/file/d/1YzR0FIVM1U
 
 ### Network
 $ PoseNet = PoseNetB6 $ from [CC](https://github.com/anuragranj/cc)
+$ FlowNet = FlowNetCorr, PWCNet $
+$ DispNet = 
 ### 1. reconstruction loss for optical flow (optical used for the fore_ground scene)
 $ L_{Flow} = \sum_{l=0}^{3}((1-w)|I_{t}- \widehat{I_{t}}|+w\frac{1-SSIM(I_{t},\widehat{I_{t}})}{2})\cdot Occ_{Mask}\cdot\sum Mask_{forebground} $
 ### 2. reconstruction loss for depth and pose
@@ -22,7 +24,7 @@ $ L_{Dp} = \sum_{l=0}^{3}((1-w)|I_{t}- \widehat{I_{t}}|+w\frac{1-SSIM(I_{t},\wid
 $ L_{smoothness} = \sum_{l=0}^{3}(\bigtriangledown_{depth}^{2}+\bigtriangledown_{backwardFlow}^{2}+\bigtriangledown_{forwardFlow}^{2} +\bigtriangledown_{Masks}^{2})$
 ### 4. Mask consisitency loss
 $ L_{consistency} = CrossEntropy(mask_{rigid, non-rigid}, mask_{background}) $
-### 5. entropy loss for slot output mask
-$ L_{entropy} = \sum_{l=0}^{k}-(Mask_{slot}^{l} \cdot log(Mask_{slot}^{l}+eps)) $
+### 5. entropy loss for output mask
+$ L_{entropy} = \sum_{l=0}^{k}-(Mask_{pred}^{l} \cdot log(Mask_{pred}^{l}+eps)) $
 
 
