@@ -37,7 +37,7 @@ $ L_{consistency} = CrossEntropy(mask_{rigid, non-rigid}, mask_{background}) $
 ### 5. entropy loss for output mask
 $ L_{entropy} = \sum_{l=0}^{k}-(Mask_{background}^{l} \cdot log(Mask_{background}^{l}+eps)) $
 
-### Training Loop
+## Training Loop
 ```
 # 初始化depth pose  absrel收敛
 CUDA_VISIBLE_DEVICES=7 python3 train.py /home/cshi/Project/Figure_ground/format_data \
