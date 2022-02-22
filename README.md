@@ -25,6 +25,6 @@ $ L_{smoothness} = \sum_{l=0}^{3}(\bigtriangledown_{depth}^{2}+\bigtriangledown_
 ### 4. Mask consisitency loss
 $ L_{consistency} = CrossEntropy(mask_{rigid, non-rigid}, mask_{background}) $
 ### 5. entropy loss for output mask
-$ L_{entropy} = \sum_{l=0}^{k}-(Mask_{pred}^{l} \cdot log(Mask_{pred}^{l}+eps)) $
+$ L_{entropy} = \sum_{l=0}^{k}-(Mask_{background}^{l} \cdot log(Mask_{background}^{l}+eps)) $
 
 
