@@ -17,7 +17,7 @@ All results could be download [here](https://drive.google.com/file/d/1YzR0FIVM1U
 * PoseNet = PoseNetB6  from [CC](https://github.com/anuragranj/cc)
 * FlowNet = FlowNetCorr, PWCNet 
 * DispNet = DispResNet 
-* MaskNet = MaskNetCNN, "MaskResNet", "MaskTransNet" 
+* MaskNet = MaskNetCNN, **MaskResNet**, **MaskTransNet** 
 
 ### 1. reconstruction loss for optical flow (optical used for the fore_ground scene)
 $ L_{Flow} = \sum_{l=0}^{3}((1-w)|I_{t}- \widehat{I_{t}}|+w\frac{1-SSIM(I_{t},\widehat{I_{t}})}{2})\cdot Occ_{Mask}\cdot\sum Mask_{forebground} $
