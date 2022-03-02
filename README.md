@@ -15,7 +15,7 @@
 * PoseNet = PoseNetB6  from [CC](https://github.com/anuragranj/cc)
 * FlowNet = FlowNetCorr, PWCNet 
 * DispNet = DispResNet (MONOCULAR)
-* MaskNet = MaskNetCNN, **MaskResNet**, **MaskTransNet** 
+* MaskNet = MaskNetCNN, MaskResNet, **MaskTransNet** 
 
 ### Datasets
 * KITTI rawdata **Eigen split**. (65 scenes 35226 samples for train. 13 scenes 9304 samples for valid.)
