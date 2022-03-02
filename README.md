@@ -24,7 +24,7 @@
 * KITTI odometry pose ground truth 08.txt 09.txt for test (未完成)
 
 ### Loss Design
-### 1. reconstruction loss for optical flow (optical used for the fore_ground scene)
+### 1. reconstruction loss for optical flow (optical used for the foreground scene)
 $ L_{Flow} = \sum_{l=0}^{3}((1-w)|I_{t}- \widehat{I_{t}}|+w\frac{1-SSIM(I_{t},\widehat{I_{t}})}{2})\cdot Occ_{Mask}\cdot\sum Mask_{forebground} $
 ### 2. reconstruction loss for depth and pose
 $ L_{Dp} = \sum_{l=0}^{3}((1-w)|I_{t}- \widehat{I_{t}}|+w\frac{1-SSIM(I_{t},\widehat{I_{t}})}{2})\cdot Occ_{Mask}\cdot\sum Mask_{background} $
