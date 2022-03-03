@@ -1,10 +1,5 @@
 # Self-supervised Figure-ground segmentation from camera ego-motion (未完成)
 # 从摄像机自我运动中进行自监督的运动物体分割
-## Current Results (MIoU)
-| Method | foreground scene   | background scene   | TOTAL(KITTI 2015 scene flow) |
-| ---------------- | ---- | ---- | ---------------------------- |
-| Previous(sota)     | 0.57 | 0.52 | 0.55                         |
-| TransMask | 0.5130 | 0.6320 | 0.5725             |
 
 ## MODEL
 ![image](https://user-images.githubusercontent.com/54012489/153791403-35cea64c-1f09-4f60-aeeb-219a96057e3b.png)
@@ -95,7 +90,12 @@ python3 train.py /media/karmen/HDD/EPC/format_data --kitti-dir /media/karmen/HDD
     --log-terminal --with-depth-gt --name initial100 --resume
  ```
  
- 
+## Current Results (MIoU)
+| Method | foreground scene   | background scene   | TOTAL(KITTI 2015 scene flow) |
+| ---------------- | ---- | ---- | ---------------------------- |
+| Previous(sota)     | 0.57 | 0.52 | 0.55                         |
+| TransMask | 0.5130 | 0.6320 | 0.5725             |
+
 ## Result samples
 All results could be download [here](https://drive.google.com/file/d/1YzR0FIVM1U3eEr2aiY3S-SYeIObKza2H/view?usp=sharing)
 | IMG | DEPTH |
