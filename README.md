@@ -18,11 +18,11 @@
 
 ### Loss Design
 ### 1. reconstruction loss for optical flow (optical used for the foreground scene)
-$ L_{Flow} = \sum_{l=0}^{3}((1-w)|I_{t}- \widehat{I_{t}}|+w\frac{1-SSIM(I_{t},\widehat{I_{t}})}{2})\cdot Occlusion \cdot (1-Mask) $
+$ L_{Flow} = \sum_{level=1}^{6}((1-w)|I_{t}- \widehat{I_{t}}|+w\frac{1-SSIM(I_{t},\widehat{I_{t}})}{2})\cdot Occlusion \cdot (1-Mask) $
 ### 2. reconstruction loss for depth and pose
-$ L_{Dp} = \sum_{l=0}^{3}((1-w)|I_{t}- \widehat{I_{t}}|+w\frac{1-SSIM(I_{t},\widehat{I_{t}})}{2})\cdot Occlusion \cdot (Mask) $
+$ L_{Dp} = \sum_{level=1}^{6}((1-w)|I_{t}- \widehat{I_{t}}|+w\frac{1-SSIM(I_{t},\widehat{I_{t}})}{2})\cdot Occlusion \cdot (Mask) $
 ### 3. edge-aware smoothness loss
-$ L_{smoothness} = \sum_{l=0}^{3}(\bigtriangledown_{depth}^{2}+\bigtriangledown_{backwardFlow}^{2}+\bigtriangledown_{forwardFlow}^{2} +\bigtriangledown_{Masks}^{2})$
+$ L_{smoothness} = \sum_{level=1}^{6}(\bigtriangledown_{depth}^{2}+\bigtriangledown_{backwardFlow}^{2}+\bigtriangledown_{forwardFlow}^{2} +\bigtriangledown_{Masks}^{2})$
 ### 4. Mask consisitency loss
 $ L_{consistency} = CrossEntropy(mask_{rigid, non-rigid}, Mask) $
 ### 5. entropy loss for output mask
