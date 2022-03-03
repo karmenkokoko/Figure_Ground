@@ -18,10 +18,10 @@
 * MaskNet = MaskNetCNN, MaskResNet, **MaskTransNet** 
 
 ### Datasets
-* KITTI rawdata **Eigen split**. (65 scenes 35226 samples for train. 13 scenes 9304 samples for valid.)
-* Eigen split 697 raw data samples for disparity test. 
-* KITTI scene flow 200 scenes for optical flow and mask test.
-* KITTI odometry pose ground truth 08.txt 09.txt for test (未完成)
+* **Training(Valid)**：KITTI rawdata **Eigen split**. (65 scenes 35226 samples for train. 13 scenes 9304 samples for valid.)
+* **depth test**: Eigen split 697 raw data samples for disparity test. 
+* **mask, optical flow test**: KITTI scene flow 200 scenes for optical flow and mask test.
+* **camera pose test**: KITTI odometry pose ground truth 08.txt 09.txt for test (未完成)
 
 ### Loss Design
 ### 1. reconstruction loss for optical flow (optical used for the foreground scene)
