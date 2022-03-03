@@ -1,7 +1,7 @@
 # Self-supervised Figure-ground segmentation from camera ego-motion (未完成)
 # 从摄像机自我运动中进行自监督的运动物体分割
-## Current Results
-| Method[mean IOU] | FG   | BG   | TOTAL(KITTI 2015 scene flow) |
+## Current Results (MIoU)
+| Method | foreground scene   | background scene   | TOTAL(KITTI 2015 scene flow) |
 | ---------------- | ---- | ---- | ---------------------------- |
 | Previous(sota)     | 0.57 | 0.52 | 0.55                         |
 | TransMask | 0.5130 | 0.6320 | 0.5725             |
