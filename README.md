@@ -30,7 +30,7 @@ $ L_{consistency} = CrossEntropy(mask_{rs}, Mask{n}) $
 ### 5. entropy loss for output mask
 $ L_{entropy} = CrossEntropy(mask_{ones}, Mask) $
 ### 6. semantic loss
-$ L_{semantic} = CrossEntropy(semantic_{from pretrained semantic network output}, semantic{Depth-semantic output}) $
+$ L_{semantic} = CrossEntropy(semantic_{from pretrained semantic network output}, semantic_{Depth-semantic output}) $
 
 ## Training Loop
 ```
