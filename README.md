@@ -3,6 +3,7 @@
 
 ## MODEL
 ![image](https://user-images.githubusercontent.com/54012489/153791403-35cea64c-1f09-4f60-aeeb-219a96057e3b.png)
+## MODEL2
 ![Fig](https://user-images.githubusercontent.com/54012489/158130544-65026dc5-241e-41ed-b25d-24341022b580.jpg)
 
 ### Networks
