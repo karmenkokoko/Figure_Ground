@@ -3,6 +3,7 @@
 
 ## MODEL
 ![image](https://user-images.githubusercontent.com/54012489/153791403-35cea64c-1f09-4f60-aeeb-219a96057e3b.png)
+![Fig](https://user-images.githubusercontent.com/54012489/158130544-65026dc5-241e-41ed-b25d-24341022b580.jpg)
 
 ### Networks
 * PoseNet = PoseNetB6  from [CC](https://github.com/anuragranj/cc)
@@ -18,15 +19,17 @@
 
 ### Loss Design
 ### 1. reconstruction loss for optical flow (optical used for the foreground scene)
-$ L_{Flow} = \sum_{level=1}^{6}((1-w)|I_{t}- \widehat{I_{t}}|+w\frac{1-SSIM(I_{t},\widehat{I_{t}})}{2})\cdot Occlusion \cdot (1-Mask) $
+$ L_{Flow} = \sum_{level=1}^{6}((1-w)|I_{t}- \widehat{I_{t}}|+w\frac{1-SSIM(I_{t},\widehat{I_{t}})}{2})\cdot Occlusion \cdot (1-Mask_{n}) $
 ### 2. reconstruction loss for depth and pose
-$ L_{Dp} = \sum_{level=1}^{6}((1-w)|I_{t}- \widehat{I_{t}}|+w\frac{1-SSIM(I_{t},\widehat{I_{t}})}{2})\cdot Occlusion \cdot (Mask) $
+$ L_{Dp} = \sum_{level=1}^{6}((1-w)|I_{t}- \widehat{I_{t}}|+w\frac{1-SSIM(I_{t},\widehat{I_{t}})}{2})\cdot Occlusion \cdot (Mask_{n}) $
 ### 3. edge-aware smoothness loss
-$ L_{smoothness} = \sum_{level=1}^{6}(\bigtriangledown_{depth}^{2}+\bigtriangledown_{backwardFlow}^{2}+\bigtriangledown_{forwardFlow}^{2} +\bigtriangledown_{Masks}^{2})$
+$ L_{smoothness} = \sum_{level=1}^{6}(\bigtriangledown_{depth}^{2}+\bigtriangledown_{backwardFlow}^{2}+\bigtriangledown_{forwardFlow}^{2} +\bigtriangledown_{Mask_{n}}^{2})$
 ### 4. Mask consisitency loss
-$ L_{consistency} = CrossEntropy(mask_{rigid, non-rigid}, Mask) $
+$ L_{consistency} = CrossEntropy(mask_{rs}, Mask{n}) $
 ### 5. entropy loss for output mask
 $ L_{entropy} = CrossEntropy(mask_{ones}, Mask) $
+### 6. semantic loss
+$ L_{semantic} = CrossEntropy(semantic_{from pretrained semantic network output}, semantic{Depth-semantic output}) $
 
 ## Training Loop
 ```
